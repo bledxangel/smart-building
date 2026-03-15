@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Building — Кабинет</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Открыть меню">☰</button>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand-box">
+        <h2>SMART BUILDING</h2>
+        <p>Личный кабинет</p>
+      </div>
+      <div class="user-box">
+        <div class="avatar" id="userAvatar">—</div>
+        <div>
+          <div class="user-name" id="userName">—</div>
+          <div class="user-role" id="userRole">—</div>
+        </div>
+      </div>
+      <nav id="nav"></nav>
+      <button class="btn btn-ghost full" id="logoutBtn" type="button">Выйти</button>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div>
+          <h1 id="pageTitle">Кабинет</h1>
+          <p id="pageSubtitle">Smart Building</p>
+        </div>
+      </div>
+      <section id="content"></section>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="modalTitle">Окно</h3>
+        <button id="closeModalBtn" class="icon-btn" type="button">✕</button>
+      </div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
