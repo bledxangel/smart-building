@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Building — Вход</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="auth-body">
+  <div class="auth-shell">
+    <div class="auth-brand">
+      <h1>SMART BUILDING</h1>
+      <p>Система управления жилым домом</p>
+    </div>
+
+    <div class="auth-card">
+      <div class="tabs">
+        <button class="tab active" id="residentTab" type="button">Жилец</button>
+        <button class="tab" id="adminTab" type="button">УК</button>
+      </div>
+
+      <form id="loginForm" class="stack">
+        <label class="field">
+          <span>Логин</span>
+          <input id="loginInput" type="email" value="resident@house.kz" required />
+        </label>
+        <label class="field">
+          <span>Пароль</span>
+          <input id="passInput" type="password" value="12345" required />
+        </label>
+        <button class="btn btn-primary" type="submit">Войти</button>
+      </form>
+
+      <p class="hint" id="authHint">Жильцы: resident@house.kz / 12345</p>
+      <button class="link-btn" id="showRegisterBtn" type="button">Нет аккаунта? Зарегистрироваться</button>
+
+      <form id="registerForm" class="stack hidden top-gap">
+        <label class="field"><span>ФИО</span><input id="regName" type="text" /></label>
+        <label class="field"><span>Квартира</span><input id="regApt" type="number" min="1" max="999" /></label>
+        <label class="field"><span>Email</span><input id="regLogin" type="email" /></label>
+        <label class="field"><span>Пароль</span><input id="regPass" type="password" /></label>
+        <label class="field"><span>Повтор пароля</span><input id="regPass2" type="password" /></label>
+        <button class="btn btn-primary" type="button" id="registerBtn">Создать аккаунт</button>
+        <button class="link-btn" type="button" id="hideRegisterBtn">Назад ко входу</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
