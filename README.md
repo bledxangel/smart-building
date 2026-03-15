@@ -14,5 +14,6 @@
 - административная панель
 
 ## Тестовые аккаунты
-Жилец: resident@house.kz / 12345
+Жилец1: resident@house.kz / 12345
 Администратор: admin@house.kz / admin
+Жилец2:apt23@house.kz / pass:'12345
